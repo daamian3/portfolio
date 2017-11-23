@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+		<title>John Smith - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.min.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+
+    <script src="jquery/external/jquery/jquery.js"></script>
+		<script src="jquery/jquery-ui.min.js"></script>
+	</head>
+	<body>
+
+    <div id="przyciemnienie" class="przyciemnienie"></div>
+		<div id="loading" class="loading">
+			<div class="loader"></div>
+		</div>
+
+		<!-- tu mozna wylaczyc -->
+		<script>
+			document.getElementById("przyciemnienie").style.display="block";
+			document.getElementById("loading").style.display="block";
+		</script>
+
+			<header>
+        <div class="container">
+          <nav>
+            <div id="open" class="hamburger"></div>
+
+            <ul class="menu">
+              <li class="menu__button"><a href="#home">HOME</a></li>
+              <span>-</span>
+              <li class="menu__button"><a href="#about">ABOUT</a></li>
+              <span>-</span>
+              <li class="menu__button"><a href="#our_services">OUR SERVICES</a></li>
+              <span>-</span>
+              <li id="last" class="menu__button"><a href="#portfolio">PORTFOLIO</a></li>
+              <span>-</span>
+              <li class="menu__button"><a href="#experience">EXPERIENCE</a></li>
+              <span>-</span>
+              <li class="menu__button"><a href="#blog">BLOG</a></li>
+              <span>-</span>
+              <li class="menu__button"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="home">
+        <div class="container">
+          <p class="home__p1">HELLO, I AM</p>
+          <h1>
+            <span class="home__span1">JOHN</span><br>
+            <span class="home__span2">SMITH</span>
+          </h1>
+          <p class="home__p2">I HAVE MORE THEN 10 YEARS OF EXPERIENCE</p>
+          <button>DOWNLOAD CD</button>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__flex">
+            <div class="about__left">
+              <h2>JOHN SMITH</h2>
+              <h3>WEB DESIGNER</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+            <div class="about__center"><img src="images/man.jpg" alt="Me"></div>
+
+            <div class="about__right">
+              <label for="design">DESIGN <span id="design__percent"></span></label>
+              <progress id="design" class="about__experience"></progress>
+
+              <label for="photography">PHOTOGRAPHY <span id="photography__percent"></span></label>
+              <progress id="photography" class="about__experience"></progress>
+
+              <label for="marketing">MARKETING <span id="marketing__percent"></span></label>
+              <progress id="marketing" class="about__experience"></progress>
+
+              <label for="branding">BRANDING <span id="branding__percent"></span></label>
+              <progress id="branding" class="about__experience"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="container">
+          <div class="information__flex">
+
+            <div class="information__box">
+              <div class="information__icon">
+                  <img src="images/phone.png" alt="Phone">
+              </div>
+              <div class="information__info">
+                <strong>PHONE NUMBER</strong>
+                <p>+ 123 456-789<br>
+                +123-456-7890</p>
+              </div>
+            </div>
+
+            <div class="information__box">
+              <div class="information__icon">
+                <img src="images/pin.png" alt="Pin">
+              </div>
+              <div class="information__info">
+                <strong>ADRESS</strong>
+                <p>8, Belgium, Brussels,<br>
+                Liutte 207 New Yor, USA</p>
+              </div>
+            </div>
+
+            <div class="information__box">
+              <div class="information__icon">
+                <img src="images/gear.png" alt="Gear">
+              </div>
+              <div class="information__info">
+                <strong>EMAIL ADRESS</strong>
+                <p>johnsmith@company.com<br>
+                youoffice@company.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our_services" class="services">
+        <div class="container">
+          <h2>OUR SERVICES</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="services__flex">
+            <div class="services__box">
+              <div class="services__icon"><img src="images/gear.png" alt="Gear"></div>
+              <strong>GEAR</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+
+            <div class="services__box">
+              <div class="services__icon"><img src="images/chain.png" alt="Chain"></div>
+              <strong>CHAIN</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+
+            <div class="services__box">
+              <div class="services__icon"><img src="images/windows.png" alt="Windows"></div>
+              <strong>WINDOW</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+
+            <div class="services__box">
+              <div class="services__icon"><img src="images/rocket.png" alt="Rocket"></div>
+              <strong>ROCKET</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+
+            <div class="services__box">
+              <div class="services__icon"><img src="images/plug.png" alt="Plug"></div>
+              <strong>PLUG</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+
+            <div class="services__box">
+              <div class="services__icon"><img src="images/light.png" alt="Lamp"></div>
+              <strong>LIGHT</strong>
+              <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <h2>TESTIMONIALS</h2>
+
+          <div class="testimonials__flex">
+            <blockquote>Fusce ullamcorper sem et tellus ultrices, eu mattis est gravida. Proin tempus felis eu ex tempor luctus. Nunc cursus ornare tellus, vitae ornare eros semper quis. Sed accumsan dui vitae tristique posuere. Vivamus iaculis eget dolor quis faucibus. Morbi mattis dapibus enim, non iaculis nisi sodales eu. Quisque elementum tellus a magna iaculis, id molestie massa malesuada. Praesent vel nulla semper mi rhoncus sagittis vitae vel mauris. Integer tempor tincidunt nulla.</blockquote>
+
+            <div class="testimonials__author">
+              <img src="images/women.jpg" alt="Our teammate">
+              <div class="testimonials__box">
+                <strong>JON BROWN</strong><br>
+                <span>GRAPHIC DESIGNER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2>PORTFOLIO</h2>
+          <p>Donec molestie arcu eget imperdiet viverra</p>
+          <aside class="portfolio__menu">
+            <div class="portfolio__menu_group">
+              <a href="#" class="portfolio__active">ALL</a>
+              <a href="#">PSD DESIGN</a>
+              <a href="#">PRESENTATION</a>
+            </div>
+            <div class="portfolio__menu_group">
+              <a href="#">WORK IDEAS</a>
+              <a href="#">MOCKUP</a>
+              <a href="#">LOGO</a>
+              <a href="#">ICONS</a>
+            </div>
+          </aside>
+
+          <div class="portfolio__flex">
+            <img src="images/portfolio_1.jpg" alt="American Burger">
+            <img src="images/portfolio_2.jpg" alt="Art Studio">
+            <img src="images/portfolio_3.jpg" alt="Nature Brochure">
+            <img src="images/portfolio_4.jpg" alt="Contructions Services">
+            <img src="images/portfolio_5.jpg" alt="Jordan Dee">
+            <img src="images/portfolio_6.jpg" alt="Summer Beach Party">
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2>EXPERIENCE</h2>
+          <p>Praesent vel nulla semper mi rhoncus sagittis vitae vel mauris</p>
+
+          <div class="experience__box">
+            <strong>PERSONAL ADVISER<br>2015-2016</strong>
+            <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus. Vivamus ut hendrerit tellus. Phasellus molestie risus ac tortor vulputate facilisis.</p>
+          </div>
+
+          <div class="experience__box box_reverse">
+            <strong>PERSONAL ADVISER<br>2015-2016</strong>
+            <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus. Vivamus ut hendrerit tellus. Phasellus molestie risus ac tortor vulputate facilisis.</p>
+          </div>
+
+          <div class="experience__box">
+            <strong>PERSONAL ADVISER<br>2015-2016</strong>
+            <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus. Vivamus ut hendrerit tellus. Phasellus molestie risus ac tortor vulputate facilisis.</p>
+          </div>
+
+          <div class="experience__box box_reverse">
+            <strong>PERSONAL ADVISER<br>2015-2016</strong>
+            <p>Proin et urna ultricies, accumsan leo vitae, dapibus velit. Mauris nec maximus est. Morbi sit amet faucibus sapien. Vivamus at accumsan ligula. Praesent commodo ante id dui eleifend, nec varius tellus rutrum. Aenean id pellentesque nulla, vitae tempor lacus. Vivamus ut hendrerit tellus. Phasellus molestie risus ac tortor vulputate facilisis.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog">
+        <div class="container">
+          <h2>BLOG</h2>
+          <p>Duis pretium, nibh nec tempor volutpat, dolor neque ultrices neque</p>
+
+          <div class="blog__flex">
+            <div class="blog__box">
+              <img src="images/blog_1.jpg" alt="Women">
+              <p>PERSONAL ADVISER</p>
+              <strong>Computera and Using Some Color</strong>
+              <p>Cras ultrices nisi at augue commodo molestie. Vivamus placerat nisl feugiat, scelerisque risus id, pretium est. Vivamus malesuada sodales neque, vel sodales erat venenatis vel. Pellentesque habitant morbi tristique senectus.</p>
+            </div>
+
+            <div class="blog__box">
+              <img src="images/blog_2.jpg" alt="Buildings">
+              <p>PERSONAL ADVISER</p>
+              <strong>Computera and Using Some Color</strong>
+              <p>Cras ultrices nisi at augue commodo molestie. Vivamus placerat nisl feugiat, scelerisque risus id, pretium est. Vivamus malesuada sodales neque, vel sodales erat venenatis vel. Pellentesque habitant morbi tristique senectus.</p>
+            </div>
+
+            <div class="blog__box">
+              <img src="images/blog_3.jpg" alt="Team">
+              <p>PERSONAL ADVISER</p>
+              <strong>Computera and Using Some Color</strong>
+              <p>Cras ultrices nisi at augue commodo molestie. Vivamus placerat nisl feugiat, scelerisque risus id, pretium est. Vivamus malesuada sodales neque, vel sodales erat venenatis vel. Pellentesque habitant morbi tristique senectus..</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <form class="contact__form">
+            <h2>CONTACT US</h2>
+            <p>Sed placerat lorem id consectetur rhoncus. In efficitur sapien ut ante bibendum mollis</p>
+
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone" required>
+            <input type="email" placeholder="Email" required><br>
+            <textarea placeholder="Message" required></textarea>
+
+            <button>SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+
+    <footer>Copyright 2017 by PSDFreebles.com. All Rights Reserved.</footer>
+
+    <script src="script.js"></script>
+
+	</body>
+</html>
