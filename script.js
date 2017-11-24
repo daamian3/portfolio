@@ -37,7 +37,7 @@ $("#open").on("click", function(){
 });
 
 $(".menu__button").on("click", function(){
-	if($(document).width < 1000) $("#open").click();
+  if($(document).width() < 1000)	$("#open").click();
 });
 
 function throttle(callback, limit) {
