@@ -887,7 +887,12 @@ footer{
   }
 
   .menu__button{
-    font-size: 1em;
+    font-size: 1.2em;
+    padding: 5px 15px;
+
+    &::after{
+      margin-top: 5px;
+    }
   }
 
   .menu{
